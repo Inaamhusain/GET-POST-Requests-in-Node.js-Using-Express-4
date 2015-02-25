@@ -9,6 +9,6 @@ http://code.ciphertrick.com/2015/02/25/get-post-requests-in-node-js-using-expres
 
 ##Installation
 
-* Clone the repo : git clone   
+* Clone the repo : git clone  https://github.com/Inaamhusain/GET-POST-Requests-in-Node.js-Using-Express-4.git 
 * Install dependencies : npm install  
 * Start the server : node server.js
