@@ -42,7 +42,7 @@ app.post('/login',function(req,res){
 	var data = {
 		"Data":""
 	};
-	connection.query("SELECT * from login WHERE email='"+email+"' and password='"+pass+"' LIMIT 1",function(err, rows, fields){
+	connection.query("SELECT * from login WHERE email=? and password=? LIMIT 1",[email,pass],function(err, rows, fields){
 		if(rows.length != 0){
 			data["Data"] = "Successfully logged in..";
 			res.json(data);
